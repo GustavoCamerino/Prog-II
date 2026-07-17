@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- INÍCIO -->
+    <mxCell id="2" value="INÍCIO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="480" y="20" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Instanciar matriz tabela -->
+    <mxCell id="3" value="Instanciar matriz tabela" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="450" y="110" width="180" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Exibir menu -->
+    <mxCell id="4" value="Exibir menu&#xa;(1-Preencher / 2-Mostrar / 3-Total / 4-Consultar / 0-Sair)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="410" y="210" width="260" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Ler escolha -->
+    <mxCell id="5" value="Ler escolha" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="465" y="310" width="150" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- ===== OPÇÃO 1 ===== -->
+    <mxCell id="10" value="Para cada vendedor i (0..3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="80" y="460" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="11" value="Para cada mês j (0..2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="80" y="550" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="12" value="Ler m[i][j]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="80" y="640" width="190" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===== OPÇÃO 2 ===== -->
+    <mxCell id="20" value="Para cada vendedor i (0..3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="310" y="460" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="21" value="Para cada mês j (0..2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="310" y="550" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="Exibir vendedor[i] e m[i][j]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="310" y="640" width="190" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===== OPÇÃO 3 ===== -->
+    <mxCell id="30" value="Para cada vendedor i (0..3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="540" y="460" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="31" value="total = 0&#xa;Somar m[i][j] para j=0..2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="540" y="550" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="32" value="Exibir vendedor[i]: R$ total" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="540" y="640" width="190" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===== OPÇÃO 4 ===== -->
+    <mxCell id="40" value="Listar vendedores numerados" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="770" y="460" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="41" value="Ler v, v = v - 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="770" y="550" width="190" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="v &lt; 0 ou v &gt;= 4?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="785" y="630" width="160" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="Exibir INVALIDO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="990" y="645" width="150" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="44" value="Exibir meses e valores de m[v][j]&#xa;Calcular e exibir total" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="770" y="740" width="190" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- escolha == 0 -->
+    <mxCell id="50" value="Exibir Ate logo!" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="1020" y="320" width="150" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- FIM -->
+    <mxCell id="99" value="FIM" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="1050" y="420" width="100" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===================== ARESTAS ===================== -->
+
+    <!-- Início -> instanciar -->
+    <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="2" target="3" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- instanciar -> exibir menu -->
+    <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="3" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- exibir menu -> ler escolha -->
+    <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="4" target="5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- escolha -> opção 1 -->
+    <mxCell id="e4" value="1" style="edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" source="5" target="10" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- escolha -> opção 2 -->
+    <mxCell id="e5" value="2" style="edgeStyle=orthogonalEdgeStyle;exitX=0.25;exitY=1;" edge="1" source="5" target="20" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- escolha -> opção 3 -->
+    <mxCell id="e6" value="3" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;" edge="1" source="5" target="30" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- escolha -> opção 4 -->
+    <mxCell id="e7" value="4" style="edgeStyle=orthogonalEdgeStyle;exitX=0.75;exitY=1;" edge="1" source="5" target="40" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- escolha == 0 -->
+    <mxCell id="e8" value="0" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;" edge="1" source="5" target="50" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- opção 1 fluxo -->
+    <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="10" target="11" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="11" target="12" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- opção 2 fluxo -->
+    <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="20" target="21" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="21" target="22" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- opção 3 fluxo -->
+    <mxCell id="e30" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="30" target="31" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e31" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="31" target="32" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- opção 4 fluxo -->
+    <mxCell id="e40" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="40" target="41" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e41" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="41" target="42" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e42" value="Sim" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;" edge="1" source="42" target="43" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e43" value="Nao" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;" edge="1" source="42" target="44" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- retorno ao menu: todas as opções voltam para exibir menu -->
+    <mxCell id="r1" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" source="12" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="175" y="780"/><mxPoint x="40" y="780"/><mxPoint x="40" y="235"/></Array></mxGeometry>
+    </mxCell>
+    <mxCell id="r2" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.2;entryY=1;" edge="1" source="22" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="405" y="760"/><mxPoint x="405" y="270"/></Array></mxGeometry>
+    </mxCell>
+    <mxCell id="r3" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" source="32" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="635" y="760"/><mxPoint x="635" y="270"/></Array></mxGeometry>
+    </mxCell>
+    <mxCell id="r4" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.8;entryY=1;" edge="1" source="44" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="865" y="820"/><mxPoint x="865" y="880"/><mxPoint x="680" y="880"/><mxPoint x="680" y="270"/></Array></mxGeometry>
+    </mxCell>
+    <mxCell id="r5" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.8;entryY=1;" edge="1" source="43" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1065" y="700"/><mxPoint x="1065" y="900"/><mxPoint x="690" y="900"/><mxPoint x="690" y="270"/></Array></mxGeometry>
+    </mxCell>
+
+    <!-- Fim -->
+    <mxCell id="ef" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="50" target="99" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- Labels das opções no diamante -->
+    <mxCell id="L1" value="Opcao 1&#xa;(Preencher)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="50" y="380" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="L2" value="Opcao 2&#xa;(Mostrar)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="280" y="380" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="L3" value="Opcao 3&#xa;(Total)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="530" y="380" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="L4" value="Opcao 4&#xa;(Consultar)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="770" y="380" width="120" height="40" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
